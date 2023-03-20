@@ -27,8 +27,21 @@ ul {
 	height: 5vmin;
 	width: 5vmin;
 	border-radius: 50%;
+	left: 50vw;
 	background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
 	animation: slide-right 1s linear infinite;
+	background-color: #fb2324;
+	animation: move-like-a-square;
+	transition-duration: 4s;
+}
+
+@keyframes move-like-a-square {
+	0% {
+		transform: none;
+	}
+	100% {
+		transform: translateX(50vw);
+	}
 }
 
 @keyframes slide-right {
